@@ -148,7 +148,7 @@ class PaymentMethodsList extends StatelessWidget {
                                     hideProgressDialog(rootContext);
                                     if (result != null) {
                                       await paymentMethods.refresh();
-                                      ScaffoldMessenger.of(rootContext).showSnackBar(SnackBar(
+                                      Scaffold.of(context).showSnackBar(SnackBar(
                                         content: Text('Payment method successfully deleted.'),
                                       ));
                                     }
